@@ -1,5 +1,7 @@
 This is a PCB based on TA-TA from the game Arknight endfields.
 
+![alt text](image.png)
+
 Features include:
 
 OLED screen for faces
