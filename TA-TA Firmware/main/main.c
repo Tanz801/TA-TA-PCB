@@ -26,5 +26,5 @@ void app_main(void) {
     //xTaskCreate(power_handle_main, "power_handle_main", 1024, NULL, 6, NULL);
     xTaskCreate(i2c_setup, "i2c_setup", 4096, NULL, 6, NULL);
     //xTaskCreate(tmp_main, "tmp_main", 1024, NULL, 5, NULL);
-    xTaskCreate(buzzer_main, "buzzer_main", 1024, NULL, 5, NULL);
+    //xTaskCreate(buzzer_main, "buzzer_main", 1024, NULL, 5, NULL);
 }
