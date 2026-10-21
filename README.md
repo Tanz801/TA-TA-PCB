@@ -1,8 +1,8 @@
-This is a PCB based on TA-TA from the game Arknight endfields.
+This is a PCB based on TA-TA from the game Arknight endfields. Designed to be a simple digital pet.
 
-![alt text](image.png)
+![Screen simulation](images\image.png)
 
-Features include:
+## Features
 
 OLED screen for faces
 Temperature sensor
@@ -10,4 +10,9 @@ Buzzer
 Onboard battery charger
 IMU to detect movement and orientation.
 
-Current firmware can only display a single face, but would be updated in the future.
+To be added:
+Full organic feeling reactions to external stimuli
+
+## PCB Wiring
+
+![PCB wiring](images\PCB-Wiring.png)
