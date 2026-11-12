@@ -6186,6 +6186,14 @@
 		(uuid "0f37d1c3-92d2-4584-8ebb-399e4b1c770b")
 	)
 	(segment
+		(start 219.25 87.75)
+		(end 212.75 87.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "GND")
+		(uuid "36153208-cc26-418b-8330-0cd49796c01a")
+	)
+	(segment
 		(start 113.86 85.47825)
 		(end 115.77 85.47825)
 		(width 0.2)
@@ -6464,6 +6472,14 @@
 		(layer "F.Cu")
 		(net "/SDA")
 		(uuid "8f569516-4c97-4f87-a90d-d82cbdf7efc4")
+	)
+	(segment
+		(start 219.25 92.25)
+		(end 212.75 92.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/WAKE UP")
+		(uuid "27b415d0-e31b-4b2c-aed0-5d09a6e6f218")
 	)
 	(via
 		(at 107.835 85.10025)

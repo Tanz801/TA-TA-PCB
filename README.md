@@ -1,6 +1,6 @@
 This is a PCB based on TA-TA from the game Arknight endfields. Designed to be a simple digital pet. This was made for week 1 of hackclub half-life, and I choose to make TA-TA because the beginner project was a digital pet and I just thought TA-TA was a pretty cool and cute character.
 
-![Screen simulation](images\image.png)
+![Screen simulation](images/image.png)
 
 ## Features
 
@@ -23,7 +23,37 @@ The firmware can be flashed by downloading the firmware folder, opening as an es
 replace PORT with the COM number of the esp if you're on windows, or the port on mac or linux.
 
 
+## Assembling
 
+Components just need to be soldered onto the pcb. The following sections can be done in any order:
+
+### Microcontroller:
+The Xiao ESP32 C3 is soldered onto the only component spot with surface mounts, the "pins" of the MCU should match the SMD pads on the PCB and the silkscreen
+
+### Power button:
+Solder the push button in the correct orientation based on the silkscreen at SW1, right side of the PCB
+
+### Temperature sensor
+Put the THT pins of the TMP36 through the holes next to U1 at the top left of the PCB, and bend it and solder it according to the silk screen.
+
+A 0.1uF ceramic capacitor should be soldered at C1 directly underneath the TMP36
+
+### IMU
+If the MPU6050 did not come with header pins, solder headerpins onto the breakout board, make sure the spacers are at the bottom.
+Solder the pins to J2 on the left of the microcontroller
+
+### Buzzer
+Solder the diode at D1, at the top of the PCB, make sure the direction of the diode (the white line) matches that of the silk screen
+
+The transistor is soldered at the 3 THT holes at Q1, make sure the emitter is soldered to pin 1, the only hole among the 3 with a square pad.
+
+A 1k resistor is soldered at R1, right below the transistor
+
+Finally solder the buzzer at BZ1, with the anode at pin one (the hole with the square pad)
+
+### Battery
+the battery shouldn't be soldered but instead secured through any means such as double sided tape.
+before connecting the battery to the jst connector, confirm the polarity of the battery, **look from the orientation where the buzzer would be at the top**. If when plugged in, the voltage source is on the right and gnd is on the left, nothing needs to be done, if its the reverse, scratch off the 2 preconnected solder jumpers at the bottom of the PCB then join the 2 previously disconnected jumpers with solder. Now the battery can be safely plugged in.
 
 
 ## BOM
@@ -48,5 +78,6 @@ replace PORT with the COM number of the esp if you're on windows, or the port on
 
 ## PCB Wiring and Schematics
 
-![PCB wiring](images\PCB-Wiring.png)
-![PCB schematics](images\PCB-Schematics.png)
+![PCB wiring](images/PCB-Wiring.png)
+![PCB schematics](images/PCB-Schematics.png)
+![PCB 3D View](images/3D-view.png)
